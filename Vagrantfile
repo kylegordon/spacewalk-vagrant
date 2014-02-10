@@ -26,8 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # You'll need this
   # sudo setcap 'cap_net_bind_service=+ep' /usr/bin/VBox
   #
-  config.vm.network :forwarded_port, guest: 80, host: 80
-  config.vm.network :forwarded_port, guest: 443, host: 443
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
+  config.vm.network :forwarded_port, guest: 8443, host: 8443
   config.vm.network :forwarded_port, guest: 4545, host: 4545
   config.vm.network :forwarded_port, guest: 5222, host: 5222
   config.vm.network :forwarded_port, guest: 5269, host: 5269
